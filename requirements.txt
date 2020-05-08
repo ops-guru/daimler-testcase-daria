@@ -1,0 +1,5 @@
+connexion
+connexion[swagger-ui]
+gevent
+googlemaps
+openapi-spec-validator

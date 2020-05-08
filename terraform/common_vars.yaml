@@ -1,0 +1,6 @@
+common:
+  yc_cloud_id: "b1g7onbkck06eh2bbp0a"
+  state_endpoint: "https://storage.yandexcloud.net"
+  state_region: "ru-central1"
+
+

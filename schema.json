@@ -1,0 +1,47 @@
+{
+    "properties":{
+       "breakThreshold":{
+          "description":"threshold to calculate if a car just stopped or did a break",
+          "type":"integer"
+       },
+       "data":{
+          "items":{
+            "properties":{
+                "fuelLevel":{
+                    "description":"fuel level for a given time in percent",
+                    "maximum":100,
+                    "minimum":0,
+                    "type":"integer"
+                },
+                "odometer":{
+                    "description":"odometer value for a given time",
+                    "type":"integer"
+                },
+                "positionLat":{
+                    "description":"latitude position for a given time",
+                    "type":"number"
+                },
+                "positionLong":{
+                    "description":"longitude position for a given time",
+                    "type":"number"
+                },
+                "timestamp":{
+                    "description":"unix timestamp",
+                    "type":"integer"
+                }
+            },
+            "type":"object"
+          },
+          "type":"array"
+       },
+       "gasTankSize":{
+          "description":"the size of the gas tank in liter",
+          "type":"integer"
+       },
+       "vin":{
+          "description":"vehicle identification number",
+          "type":"string"
+       }
+    },
+    "type":"object"
+ }

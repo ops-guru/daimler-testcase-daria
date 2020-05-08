@@ -1,0 +1,7 @@
+__pycache__
+secret_vars.yaml
+terraform_yandex.json
+yandex_access_key.json
+.terraform
+.terragrunt-cache
+env.sh

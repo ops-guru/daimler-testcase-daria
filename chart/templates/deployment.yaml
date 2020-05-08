@@ -1,0 +1,29 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: {{ template "app.name" . }}
+  labels:
+    app: {{ template "app.name" . }}
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: {{ template "app.name" . }}
+    spec:
+      containers:
+      - name: {{ template "app.name" . }}
+        image: {{ .Values.image }}
+        ports:
+        - name: http
+          containerPort: 80
+        env:
+        - name: USER
+          value: {{ .Values.username }}
+        - name: PASSWORD
+          value: {{ .Values.password }}
+        - name: GEO_KEY
+          value: {{ .Values.geo_key }}
+
+
+          

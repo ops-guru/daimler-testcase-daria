@@ -1,0 +1,6 @@
+image:
+port: 80
+serviceType: ClusterIP
+username:
+password:
+geo_key:
